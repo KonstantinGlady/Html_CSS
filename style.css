@@ -4,8 +4,12 @@
     margin: 0 auto;
 }
 
-.a {
+a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 . {
@@ -93,6 +97,10 @@ body {
     border-radius: 10px;
 }
 
+.header_button:hover {
+    background: #316099;
+}
+
 .header_button_text {
     font-size: 16px;
     line-height: 26px;
@@ -169,11 +177,13 @@ body {
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #5A98D0;
+
 }
 
 .middle_link_img {
     width: 22.67px;
     margin-left: 20px;
+    text-decoration: none;
 }
 
 .container_home {
@@ -226,18 +236,299 @@ body {
     height: 657px;
     top: 2716px;
     background: #316099;
+
 }
 
-/*
-.footer_button{
+.footer_up {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #FFFFFF;
+    height: 391px;
+}
+
+.footer_up_h3 {
+    margin-top: 91px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer_up_text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer_middle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_button {
+    margin-top: 165px;
     width: 236.63px;
     height: 56px;
     background: #5A98D0;
 }
-.footer_button_text{
+
+.footer_button:hover {
+    background: #316099;
+}
+
+.footer_button_text {
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-}*/
+}
+
+.footer_text {
+    margin-top: 64px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    left: 113px;
+    bottom: 64px;
+}
+
+.footer_copyright {
+    margin-left: 113px;
+    opacity: 0.4;
+}
+
+/*
+доразрешение до 1024
+*/
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .header_down_right {
+        bottom: -100px;
+    }
+
+    .middle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle_first {
+        margin-top: 32px;
+    }
+  .container_home{
+      width: auto;
+  }
+    .middle_second_item{
+        width: 336px;
+        height: 253px;
+        background-size: 336px 253px;
+    }
+}
+
+/*
+доразрешение до 768
+*/
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .header_down_top{
+        font-size: 35px;
+    }
+
+    .header_down_right {
+        left: 0px;
+        bottom: -150px;
+    }
+    .middle_second{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/*
+разрешение до 376
+*/
+@media (max-width: 426px) {
+    .container {
+        max-width: 376px;
+        text-align: center;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+    .header_down_right {
+        background-image: none;
+        width: 0px;
+    }
+
+    .header_top_img_left {
+        padding-top: 2px;
+        padding-left: 2px;
+    }
+
+    .header_top_img_right {
+        padding-top: 4px;
+        padding-right: 2px;
+    }
+
+    .header_down_left {
+        right: 0px;
+    }
+
+    .header_down_right {
+
+    }
+
+    .header_down_top {
+        position: center;
+        width: 343px;
+        height: 76px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+
+    .header_down_text {
+        width: 343px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+    }
+
+    .header_button {
+        position: center;
+        width: 107.71px;
+        height: 27.42px;
+        background: #5A98D0;
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        border-radius: 10px;
+    }
+
+    .header_button_text {
+        font-size: 12px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .header_h3 {
+        width: 343px;
+        height: 28px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .header_h5 {
+        width: 343px;
+        height: 104px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #222222;
+    }
+
+    .container_home {
+        width: 343px;
+        height: 144.42px;
+        background-image: url("img/Mask Group modile.png");
+    }
+
+    .smart_home_text {
+        font-size: 0;
+    }
+
+    .middle_second {
+        width: 343px;
+        height: 255px;
+        background-image: url("img/MaskGroupMobile2.png");
+        margin-top: 16px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .middle_second_item {
+        background-image: none;
+    }
+
+    .middle_second_item_text {
+        font-size: 0;
+    }
+
+    .footer {
+        margin-top: 64px;
+    }
+
+    .footer_up {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_up_h3 {
+        width: 343px;
+        height: 51px;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .footer_up_text {
+        width: 343px;
+        height: 97px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+    .footer_button {
+        width: 108.23px;
+        height: 31.48px;
+        margin-top: 0;
+    }
+
+    .footer_middle {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .footer_text {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin-top: 0;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .footer_copyright {
+        margin-left: 0;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+}
